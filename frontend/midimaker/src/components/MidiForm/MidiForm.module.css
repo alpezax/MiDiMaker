@@ -1,27 +1,31 @@
-/* src/components/MidiForm/MidiForm.module.css */
 .form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* horizontal */
   gap: 1rem;
-  background-color: var(--303-light-grey);
+  overflow-x: auto; /* scroll horizontal si no cabe */
   padding: var(--global-margin);
+  background-color: var(--303-light-grey);
   border-radius: 10px;
-  max-width: 400px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   font-family: neue-haas-unica, sans-serif;
+  align-items: flex-end; /* para alinear inputs con el botón */
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column; /* label encima del input */
+  min-width: 120px;
 }
 
 label {
-  display: flex;
-  flex-direction: column;
   font-weight: 500;
   color: var(--101-grey);
   font-size: clamp(14px, 1vw, 16px);
+  margin-bottom: 0.25rem;
 }
 
 input, select {
   padding: 0.5rem 0.75rem;
-  margin-top: 0.25rem;
   border-radius: 5px;
   border: 1px solid var(--303-grey);
   background-color: var(--808-black);
@@ -35,7 +39,7 @@ input:focus, select:focus {
 }
 
 button {
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   background-color: var(--808-red);
   color: #fff;
   border: none;
@@ -44,6 +48,7 @@ button {
   font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.2s ease;
+  flex-shrink: 0; /* evitar que el botón se reduzca */
 }
 
 button:hover {

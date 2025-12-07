@@ -1,0 +1,2 @@
+Dada las siguiente api escrita en python. Necesito que soluciones las peticiones que te haré a continuación.
+El proyecto tiene la siguiente estructura y codigo:

@@ -9,17 +9,29 @@ export const generateMidi = async (data) => {
 
     if (!response.ok) throw new Error("Error al generar MIDI");
 
-    // Descarga el archivo MIDI
+    // Obtener blob del archivo MIDI
     const blob = await response.blob();
+
+    // Generar nombre aleatorio basado en timestamp y progresión
+    const timestamp = Date.now();
+    const progressionName = data.progression.join("-");
+    const fileName = `midi_${progressionName}_${timestamp}.mid`;
+
+    // Descargar el archivo
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "composition.mid";
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
     a.remove();
+
+    // Retornar nombre del archivo generado
+    return fileName;
+
   } catch (error) {
     console.error(error);
     alert("Hubo un error al generar el archivo MIDI.");
+    return null;
   }
 };
