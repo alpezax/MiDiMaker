@@ -1,14 +1,12 @@
-from fastapi import FastAPI, UploadFile, File
+# app/api/midi_blob.py
+from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import StreamingResponse
 import io
 
-app = FastAPI()
+router = APIRouter(prefix="/api/v1")
 
-@app.post("/api/v1/midi-blob")
+@router.post("/midi-blob")
 async def midi_blob(file: UploadFile = File(...)):
-    # Leer el contenido del archivo MIDI en memoria
     midi_bytes = await file.read()
     midi_stream = io.BytesIO(midi_bytes)
-
-    # Retornar como stream (Blob)
     return StreamingResponse(midi_stream, media_type="audio/midi")
