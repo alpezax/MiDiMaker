@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import MidiForm from "./components/MidiForm/MidiForm";
+import PatternMidiForm from "./components/PatternMidiForm/PatternMidiForm";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <main>
         <MidiForm />
+        <PatternMidiForm />
       </main>
     </div>
   );

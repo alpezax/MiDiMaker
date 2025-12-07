@@ -1,0 +1,193 @@
+patterns:
+  - name: "Hip Hop Basic"
+    genre: "Hip Hop"
+    bpm: 90
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]
+      hihat_closed: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+
+  - name: "Trap Roll"
+    genre: "Trap"
+    bpm: 140
+    steps: 16
+    instruments:
+      kick:        [1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0]
+      snare:       [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      clap:        [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]
+
+  - name: "House Four on the Floor"
+    genre: "House"
+    bpm: 128
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      ride:        [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+
+  - name: "Electro Funk"
+    genre: "Electro"
+    bpm: 115
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0]
+      hihat_open:  [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+      cowbell:     [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+
+  - name: "Latin Groove"
+    genre: "Latin"
+    bpm: 100
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0]
+      snare:       [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+      low_tom:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+      maracas:     [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+
+patterns:
+  # -------- ROCK --------
+  - name: "Rock Standard Beat"
+    genre: "Rock"
+    bpm: 120
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+      low_tom:     [0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0]
+      ride:        [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+
+  - name: "Rock Fill Variation"
+    genre: "Rock"
+    bpm: 125
+    steps: 16
+    instruments:
+      kick:        [1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1]
+      hihat_closed: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+      high_tom:    [0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0]
+
+  - name: "Rock Half-Time"
+    genre: "Rock"
+    bpm: 110
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+      snare:       [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      low_tom:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+
+  - name: "Rock Syncopated"
+    genre: "Rock"
+    bpm: 118
+    steps: 16
+    instruments:
+      kick:        [1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1]
+      hihat_open:  [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]
+      ride:        [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]
+
+  - name: "Rock Groove"
+    genre: "Rock"
+    bpm: 122
+    steps: 16
+    instruments:
+      kick:        [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+      cowbell:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+
+  # -------- NEOSOUL --------
+  - name: "NeoSoul Chill"
+    genre: "NeoSoul"
+    bpm: 85
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      rimshot:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+
+  - name: "NeoSoul Swing"
+    genre: "NeoSoul"
+    bpm: 88
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      snare:       [0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0]
+      hihat_open:  [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      clap:        [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+
+  - name: "NeoSoul Lazy Beat"
+    genre: "NeoSoul"
+    bpm: 82
+    steps: 16
+    instruments:
+      kick:        [1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      low_tom:     [0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0]
+
+  - name: "NeoSoul Triplet Flow"
+    genre: "NeoSoul"
+    bpm: 90
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1]
+      cowbell:     [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+
+  - name: "NeoSoul Groove"
+    genre: "NeoSoul"
+    bpm: 87
+    steps: 16
+    instruments:
+      kick:        [1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_open:  [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      maracas:     [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+
+  # -------- FUNK --------
+  - name: "Funk Classic"
+    genre: "Funk"
+    bpm: 110
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      cowbell:     [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]
+
+  - name: "Funk Syncopated"
+    genre: "Funk"
+    bpm: 105
+    steps: 16
+    instruments:
+      kick:        [1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_open:  [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      rimshot:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+
+  - name: "Funk Groove"
+    genre: "Funk"
+    bpm: 108
+    steps: 16
+    instruments:
+      kick:        [1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_closed: [1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1]
+      low_tom:     [0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]
+
+  - name: "Funk Shuffle"
+    genre: "Funk"
+    bpm: 112
+    steps: 16
+    instruments:
+      kick:        [1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0]
+      snare:       [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0]
+      hihat_open:  [0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1]
+      cowbell:     [0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0]

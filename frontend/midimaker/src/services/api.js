@@ -55,3 +55,30 @@ export const generateAndFetchMidiBlob = async (data) => {
     return null;
   }
 };
+
+// src/services/api.js
+
+// Genera un MIDI directamente desde un RhythmPattern 808
+export const generate808MidiBlob = async (patternData) => {
+  try {
+    const response = await fetch("http://127.0.0.1:8000/api/v1/generate/808", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(patternData),
+    });
+
+    if (!response.ok) throw new Error("Error al generar MIDI 808");
+
+    const blob = await response.blob();
+    const timestamp = Date.now();
+    const fileName = `808_pattern_${patternData.pattern_name || "pattern"}_${timestamp}.mid`;
+    const url = window.URL.createObjectURL(blob);
+
+    return { blob, fileName, url };
+  } catch (err) {
+    console.error(err);
+    alert("Hubo un error al generar el patrón MIDI 808.");
+    return null;
+  }
+};
+
