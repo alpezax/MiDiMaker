@@ -5,6 +5,7 @@ from app.api.chords import router
 from app.api.midiblob import router as blob_router
 from app.api.rhythm808 import router as rhythm_router
 from app.api.tr808db import router as tr808db_router
+from app.api.bassline import router as bass_router
 
 app = FastAPI()
 
@@ -21,7 +22,8 @@ app.include_router(router)
 app.include_router(blob_router)
 app.include_router(rhythm_router)
 app.include_router(tr808db_router)
-    
+app.include_router(bass_router)
+
 @app.get("/")
 def root():
     return {"msg": "MIDI API running"}
