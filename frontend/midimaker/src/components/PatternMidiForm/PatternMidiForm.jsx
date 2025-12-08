@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./PatternMidiForm.module.css";
 import ReactMidiPlayer from "react-midi-player";
-import { generateAndFetchMidiBlob, generate808MidiBlob  } from "../../services/api";
+import { generateAndFetchMidiBlob, generate808MidiBlob } from "../../services/api";
 
 const PatternMidiForm = () => {
   const [patterns, setPatterns] = useState([]);
@@ -28,7 +28,6 @@ const PatternMidiForm = () => {
     fetchPatterns();
   }, []);
 
-  
   const handlePatternSelect = (pattern) => {
     setSelectedPattern(pattern);
     setBpm(pattern.bpm);
@@ -36,23 +35,22 @@ const PatternMidiForm = () => {
     setMidiFileName(null);
   };
 
-const handleGenerateMidi = async () => {
-  if (!selectedPattern) return;
+  const handleGenerateMidi = async () => {
+    if (!selectedPattern) return;
 
-  const patternData = {
-    bpm,
-    pattern_length: selectedPattern.steps,
-    ...selectedPattern.instruments,
-    pattern_name: selectedPattern.name
+    const patternData = {
+      bpm,
+      pattern_length: selectedPattern.steps,
+      ...selectedPattern.instruments,
+      pattern_name: selectedPattern.name
+    };
+
+    const result = await generate808MidiBlob(patternData);
+    if (result) {
+      setMidiUrl(result.url);
+      setMidiFileName(result.fileName);
+    }
   };
-
-  const result = await generate808MidiBlob(patternData);
-  if (result) {
-    setMidiUrl(result.url);
-    setMidiFileName(result.fileName);
-  }
-};
-
 
   const handleDownload = () => {
     if (!midiUrl || !midiFileName) return;
@@ -66,8 +64,9 @@ const handleGenerateMidi = async () => {
 
   return (
     <div>
-      <h2>Selecciona un patrón</h2>
-      <div className={styles.scrollContainer}>
+      <h3>RythmPatterns</h3>
+
+      <div className={styles.patternGrid}>
         {patterns.map((p) => (
           <div
             key={p.name}

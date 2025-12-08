@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <main>
         <MidiForm />
+        <br /><br />
         <PatternMidiForm />
       </main>
     </div>

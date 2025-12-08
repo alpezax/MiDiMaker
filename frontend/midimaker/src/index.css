@@ -49,7 +49,9 @@ body,html {
     margin: 0;
     overflow: hidden;
     -ms-scroll-chaining: none;
-    overscroll-behavior: none
+    overscroll-behavior: none;
+    overflow-y: auto;   
+    overflow-x: hidden; 
 }
 
 body {
@@ -164,8 +166,10 @@ button svg {
     transform: scale(.95)
 }
 
-.main {
-    position: relative
+.app main {
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .instrument {

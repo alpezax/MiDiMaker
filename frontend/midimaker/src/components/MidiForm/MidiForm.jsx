@@ -58,6 +58,7 @@ const MidiForm = () => {
 
   return (
     <div>
+      <h3>Chord Progressions</h3>
       <form className={styles.form} onSubmit={handleSubmit}>
         {["key","scale","progression","chord_types","tempo","duration","octave"].map((field) => (
           <div key={field} className={styles["label-container"]}>
